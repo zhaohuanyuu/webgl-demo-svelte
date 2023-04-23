@@ -7,7 +7,7 @@
   const demoRoute = import.meta.glob('./**/*.svelte');
 
   const demoList = Object.keys(demoRoute).map(path => {
-    const [pre, name] = path.match(/\.\/(.+)\//)
+    const [_, name] = path.match(/\.\/(.+)\//)
     return {
       name,
       path: '/demos/' + name
@@ -34,5 +34,7 @@
   .demo-list_li a{
     display: inline-block;
     width: 100%;
+    font-weight: bold;
+    font-family: monolisa, 'pingfang-sc';
   }
 </style>
