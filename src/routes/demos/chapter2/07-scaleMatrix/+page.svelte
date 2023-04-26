@@ -15,7 +15,7 @@
       '}\n';
   
     // The Scaleing factor
-    var Sx = 1.0, Sy = 1.0, Sz = 1.0;
+    var Sx = 1.0, Sy = 0.5, Sz = 1.0;
 
     function main() {
       // Retrieve <canvas> element
